@@ -3,6 +3,7 @@
 ## Setup
 
 Install dependencies with `npm install`.
+npm upgrade chokidar
 
 ## Running Webpack Development Server
 
