@@ -4,7 +4,7 @@ import 'components/Appointment/styles.scss'
 
 export default function Show(props) {
 
-  const { student, interviewer, onEdit, onDelete } = props;
+  const { id, student, interviewer, onEdit, onDelete } = props;
 
   return (
     <main className="appointment__card appointment__card--show">
@@ -27,7 +27,7 @@ export default function Show(props) {
             className="appointment__actions-button"
             src="images/trash.png"
             alt="Delete"
-            onClick={onDelete}
+            onClick={() => onDelete(id)}
           />
         </section>
       </section>
