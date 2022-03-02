@@ -41,6 +41,10 @@ export default function Appointment(props) {
   // save function
   const saveAppointment = (name, interviewer) => {
     transition(STATUS);
+    if (!name || !interviewer) {
+      transition(ERROR_SAVE);
+      return;
+    }
     const interview = {
       student: name,
       interviewer
@@ -51,6 +55,10 @@ export default function Appointment(props) {
   };
 
   const deleteAppointment = (id) => {
+    if (!id) {
+      transition(ERROR_DELETE);
+      return;
+    }
     transition(STATUS);
     onDelete(id)
       .then(() => transition(EMPTY))
