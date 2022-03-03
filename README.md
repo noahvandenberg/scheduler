@@ -5,6 +5,9 @@
 Install dependencies with `npm install`.
 npm upgrade chokidar
 
+install the [scheduler api](https://github.com/noahvandenberg/scheduler-api) and follow it's instructions.
+
+
 ## Running Webpack Development Server
 
 ```sh
