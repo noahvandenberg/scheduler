@@ -17,8 +17,14 @@ npm start
 npm test
 ```
 
-## Running Storybook Visual Testbed
-
-```sh
-npm run storybook
-```
+## Screen Shots 📸
+### On First Load
+![On First Load](./documentation/Interview-5.png)
+### Click to Create Appointment
+![Click to Create Appointment](documentation/Interview-4.png)
+### Enter name and select interviewer
+![Enter Name and Select Interviewer](documentation/Interview-3.png)
+### View Your Newly Create Appointment
+![View Your Newly Create Appointment](documentation/Interview-2.png)
+### Delete Your Appointment
+![Delete Your Appointment](documentation/Interview-1.png)
