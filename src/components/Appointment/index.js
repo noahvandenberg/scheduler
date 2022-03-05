@@ -51,7 +51,7 @@ export default function Appointment(props) {
     };
     onSave(id, interview)
       .then(() => transition(SHOW) )
-      .catch(() => transition(ERROR_SAVE, true) );
+      .catch(() => transition(ERROR_SAVE) );
   };
 
   const deleteAppointment = (id) => {
@@ -62,7 +62,7 @@ export default function Appointment(props) {
     transition(STATUS);
     onDelete(id)
       .then(() => transition(EMPTY))
-      .catch(() => transition(ERROR_DELETE, true) );
+      .catch(() => transition(ERROR_DELETE) );
   }
 
 
